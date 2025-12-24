@@ -1,0 +1,7 @@
+{
+  "name": "Limkokwing Online Registration System",
+  "description": "A high-end, role-based academic registration platform featuring a strict black-and-white aesthetic, automated faculty routing, and a sequential approval workflow.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
