@@ -10,6 +10,7 @@ import SystemAdminDashboard from './components/SystemAdminDashboard';
 import ChangePasswordModal from './components/ChangePasswordModal';
 import StudentAccountsList from './components/StudentAccountsList';
 import { User, UserRole, RegistrationSubmission, RegistrationStatus } from './types';
+import limlogo from './assets/limlogo.png';
 
 // Mock Initial User for Demo
 const DEFAULT_STUDENT: User = {
@@ -178,7 +179,7 @@ const App: React.FC = () => {
         <div className="max-w-md w-full text-center space-y-4">
           <div className="flex flex-col items-center">
              <div className="p-4">
-               <img src="/assets/limlogo.png" className="w-48 h-auto" alt="Limkokwing University" />
+               <img src={limlogo} className="w-48 h-auto" alt="Limkokwing University" />
              </div>
           </div>
 

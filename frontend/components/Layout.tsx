@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { User, UserRole } from '../types';
+import limlogo from '../assets/limlogo.png';
 
 export type ActivePage = 'dashboard' | 'profile' | 'accounts' | 'approvals' | 'notifications';
 
@@ -28,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, activePage, o
       {user && (
         <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 bg-white sticky top-0 z-40 shadow-sm rounded-b-xl">
           <div className="flex items-center space-x-3">
-            <img src="/assets/limlogo.png" className="w-10 h-auto rounded-lg shadow" alt="Logo" />
+            <img src={limlogo} className="w-10 h-auto rounded-lg shadow" alt="Logo" />
             <span className="text-xs font-extrabold uppercase tracking-widest text-gray-700">LIM Portal</span>
           </div>
           <button
@@ -69,7 +70,7 @@ const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, activePage, o
         `}>
           <div className="flex flex-col items-center">
             <div className="mb-2">
-               <img src="/assets/limlogo.png" className="w-auto h-20 shadow" alt="Limkokwing University Logo" />
+               <img src={limlogo} className="w-auto h-20 shadow" alt="Limkokwing University Logo" />
             </div>
           </div>
           <nav className="flex-1 space-y-1 overflow-y-auto min-h-0">
